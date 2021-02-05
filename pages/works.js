@@ -1,7 +1,7 @@
 
 import Work from '../components/Work'
 
-function works({ data }) {
+function works({data}) {
   return (
     <section>
       <h1>my works</h1>
@@ -12,7 +12,7 @@ function works({ data }) {
 
 export default works;
 
-export async function getServerSideProps(context) {
+export async function getStaticProps(context) {
   const res = await fetch(`https://api.github.com/users/abdhmd/repos`);
   const data = await res.json();
 
