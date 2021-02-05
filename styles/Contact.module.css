@@ -1,0 +1,48 @@
+.contact form{
+    width: 100%;
+}
+
+.contact p{
+    margin: 1rem 0;
+}
+
+.contact p input,
+.contact p textarea{
+    width: 100%;
+    padding: .8rem;
+    margin-top: .5rem;
+    outline: none;
+    background: transparent;
+    border: 1.5px solid var(--color-light);
+    color: var(--color-light);
+    font-family: "Poppins",sans-serif;
+}
+
+.contact p textarea{
+    height: 100px;
+}
+
+.contact button{
+    background: var(--primary);
+    outline: none;
+    border: 1.5px solid var(--primary);
+    color: var(--color-dark);
+    padding: .8rem 3rem;
+    font-family: "Poppins",sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 900px){
+    .contact{
+        padding-left: 8rem;
+        padding-right: 8rem ;
+    }
+}
+@media screen and (min-width: 1200px){
+    .contact{
+        padding-left: 12rem;
+        padding-right: 12rem ;
+    }
+}

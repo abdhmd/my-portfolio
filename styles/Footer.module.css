@@ -1,0 +1,31 @@
+.footer {
+  background: var(--primary);
+  color: var(--color-dark);
+  width: 100%;
+  padding: 2rem ;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: .9rem;
+}
+
+.footer a {
+  background: var(--color-dark);
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 45px;
+  margin: 0 0.5rem;
+}
+.footer a i {
+  color: var(--color-light);
+  font-size: 1.2rem;
+}
+
+
+.footer p{
+    margin-top: 1rem;
+}
