@@ -1,5 +1,5 @@
 import styles from "../styles/Works.module.css";
-
+import Image from "next/image"
 function Work({ repos }) {
   return (
     <div className={styles.works}>
@@ -11,9 +11,10 @@ function Work({ repos }) {
 
         return (
           <div key={repo.id} className={styles.work}>
-            <img
+            <Image
               src={`https://api.thumbnail.ws/api/${KEY_API}/thumbnail/get?url=${url}&width=480`}
               alt={repo.name}
+              layout="fill"
             />
             <div className={styles.work_desc}>
               <p>{dateText}</p>
